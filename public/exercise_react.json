@@ -1,0 +1,422 @@
+{
+    "child_runs": [
+        {
+            "step": {
+                "type": "ConditionStep",
+                "title": "If number > 40",
+                "length": 3,
+                "predicate": "<lambda>",
+                "if_true": {
+                    "type": "Flow",
+                    "title": "First Flow",
+                    "length": 3,
+                    "steps": [
+                        {
+                            "type": "Chain",
+                            "title": "My chain",
+                            "length": 3,
+                            "steps": [
+                                {
+                                    "type": "FunctionStep",
+                                    "title": "Add",
+                                    "length": 1,
+                                    "function": "<lambda>",
+                                    "args": {
+                                        "num1": 50,
+                                        "num2": 5
+                                    }
+                                },
+                                {
+                                    "type": "FunctionStep",
+                                    "title": "Subtract",
+                                    "length": 1,
+                                    "function": "<lambda>",
+                                    "args": {
+                                        "num1": "<LastReturnValue>",
+                                        "num2": 30
+                                    }
+                                },
+                                {
+                                    "type": "FunctionStep",
+                                    "title": "Multiply",
+                                    "length": 1,
+                                    "function": "<lambda>",
+                                    "args": {
+                                        "num1": "<LastReturnValue>",
+                                        "num2": 4
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "if_false": null
+            },
+            "child_runs": [
+                {
+                    "step": {
+                        "type": "Flow",
+                        "title": "First Flow",
+                        "length": 3,
+                        "steps": [
+                            {
+                                "type": "Chain",
+                                "title": "My chain",
+                                "length": 3,
+                                "steps": [
+                                    {
+                                        "type": "FunctionStep",
+                                        "title": "Add",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": 50,
+                                            "num2": 5
+                                        }
+                                    },
+                                    {
+                                        "type": "FunctionStep",
+                                        "title": "Subtract",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": "<LastReturnValue>",
+                                            "num2": 30
+                                        }
+                                    },
+                                    {
+                                        "type": "FunctionStep",
+                                        "title": "Multiply",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": "<LastReturnValue>",
+                                            "num2": 4
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "child_runs": [
+                        {
+                            "step": {
+                                "type": "Chain",
+                                "title": "My chain",
+                                "length": 3,
+                                "steps": [
+                                    {
+                                        "type": "FunctionStep",
+                                        "title": "Add",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": 50,
+                                            "num2": 5
+                                        }
+                                    },
+                                    {
+                                        "type": "FunctionStep",
+                                        "title": "Subtract",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": "<LastReturnValue>",
+                                            "num2": 30
+                                        }
+                                    },
+                                    {
+                                        "type": "FunctionStep",
+                                        "title": "Multiply",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": "<LastReturnValue>",
+                                            "num2": 4
+                                        }
+                                    }
+                                ]
+                            },
+                            "child_runs": [
+                                {
+                                    "step": {
+                                        "type": "FunctionStep",
+                                        "title": "Add",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": 50,
+                                            "num2": 5
+                                        }
+                                    },
+                                    "child_runs": [],
+                                    "return_value": 55,
+                                    "run_time": 0.013677358627319336
+                                },
+                                {
+                                    "step": {
+                                        "type": "FunctionStep",
+                                        "title": "Subtract",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": 55,
+                                            "num2": 30
+                                        }
+                                    },
+                                    "child_runs": [],
+                                    "return_value": 25,
+                                    "run_time": 0.009450674057006836
+                                },
+                                {
+                                    "step": {
+                                        "type": "FunctionStep",
+                                        "title": "Multiply",
+                                        "length": 1,
+                                        "function": "<lambda>",
+                                        "args": {
+                                            "num1": 25,
+                                            "num2": 4
+                                        }
+                                    },
+                                    "child_runs": [],
+                                    "return_value": 100,
+                                    "run_time": 0.003579378128051758
+                                }
+                            ],
+                            "return_value": 100,
+                            "run_time": 0.06669020652770996
+                        }
+                    ],
+                    "return_value": 100,
+                    "run_time": 0.08187317848205566
+                }
+            ],
+            "return_value": 100,
+            "run_time": 0.09691953659057617
+        },
+        {
+            "step": {
+                "type": "Chain",
+                "title": null,
+                "length": 10,
+                "steps": [
+                    {
+                        "type": "ForLoopStep",
+                        "title": "Fibonacci Loop",
+                        "length": 9,
+                        "step": {
+                            "type": "FunctionStep",
+                            "title": "fibonacci",
+                            "length": 1,
+                            "function": "<lambda>",
+                            "args": {
+                                "num": 5
+                            }
+                        },
+                        "items": [
+                            10,
+                            9,
+                            8,
+                            7,
+                            6,
+                            5,
+                            4,
+                            3,
+                            2
+                        ]
+                    },
+                    {
+                        "type": "FunctionStep",
+                        "title": "Multiply Fibonacci result by 2",
+                        "length": 1,
+                        "function": "<lambda>",
+                        "args": {
+                            "num1": 2,
+                            "num2": "<LastReturnValue>"
+                        }
+                    }
+                ]
+            },
+            "child_runs": [
+                {
+                    "step": {
+                        "type": "ForLoopStep",
+                        "title": "Fibonacci Loop",
+                        "length": 9,
+                        "step": {
+                            "type": "FunctionStep",
+                            "title": "fibonacci",
+                            "length": 1,
+                            "function": "<lambda>",
+                            "args": {
+                                "num": 5
+                            }
+                        },
+                        "items": [
+                            10,
+                            9,
+                            8,
+                            7,
+                            6,
+                            5,
+                            4,
+                            3,
+                            2
+                        ]
+                    },
+                    "child_runs": [
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.005481719970703125
+                        },
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.005371570587158203
+                        },
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.004305601119995117
+                        },
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.0031518936157226562
+                        },
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.0030510425567626953
+                        },
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.00679326057434082
+                        },
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.0034613609313964844
+                        },
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.00409698486328125
+                        },
+                        {
+                            "step": {
+                                "type": "FunctionStep",
+                                "title": "fibonacci",
+                                "length": 1,
+                                "function": "<lambda>",
+                                "args": {
+                                    "num": 5
+                                }
+                            },
+                            "child_runs": [],
+                            "return_value": 3,
+                            "run_time": 0.003396749496459961
+                        }
+                    ],
+                    "return_value": 3,
+                    "run_time": 0.11261224746704102
+                },
+                {
+                    "step": {
+                        "type": "FunctionStep",
+                        "title": "Multiply Fibonacci result by 2",
+                        "length": 1,
+                        "function": "<lambda>",
+                        "args": {
+                            "num1": 2,
+                            "num2": 3
+                        }
+                    },
+                    "child_runs": [],
+                    "return_value": 6,
+                    "run_time": 0.0035784244537353516
+                }
+            ],
+            "return_value": 6,
+            "run_time": 0.1276090145111084
+        }
+    ],
+    "progress": 1.0,
+    "steps_finished": 13,
+    "total_steps": 13
+}
